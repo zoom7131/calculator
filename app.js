@@ -29,7 +29,7 @@ class Kalkulator {
             this.oblicz()
         }
         this.operator = operator
-        this.wczesniejszyaOperacja = this.aktualnaOperacja
+        this.wczesniejszaOperacja = this.aktualnaOperacja
         this.aktualnaOperacja = ''
     }
 
@@ -40,16 +40,16 @@ class Kalkulator {
         if (isNaN(wczesniej) || isNaN(aktualnie)) return
         switch (this.operator){
             case '+':
-                obliczanie = wczesniej + aktualnie
+                obliczenie = wczesniej + aktualnie
                 break
             case '-':
-                obliczanie = wczesniej - aktualnie
+                obliczenie = wczesniej - aktualnie
                 break
             case '*':
-                obliczanie = wczesniej * aktualnie
+                obliczenie = wczesniej * aktualnie
                 break
             case '/':
-                obliczanie = wczesniej / aktualnie
+                obliczenie = wczesniej / aktualnie
                 break
             default:
                 return
